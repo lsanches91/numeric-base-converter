@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversor Numérico</title>
+    <meta charset="utf-8">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <h2>Conversor Numérico</h2>
+      <div class="main-container">
+        <p class="instruction">Put the number that you want to convert and select it's type</p>
+        <div class="input-container">
+          <p>Input Field</p>
+          <label for="numberInput">Number Input</label>
+          <input type="text" id="numberInput" name="numberInput"><br>
+          <form>            
+            <input type="radio" id="decimal" name="numberType" value="decimal" checked>
+            <label for="decimal">Decimal</label><br>
+            <input type="radio" id="binary" name="numberType" value="binary">
+            <label for="binary">Binary</label><br>
+            <input type="radio" id="octal" name="numberType" value="octal">
+            <label for="octal">Octal</label><br>
+            <input type="radio" id="hexadecimal" name="numberType" value="hexadecimal">
+            <label for="hexadecimal">Hexadecimal</label><br>
+            <input type="button" onclick="getNumberType()" value="Convert">
+          </form>
+
+        </div>
+        <div class="output-container">
+          <p>Output Field</p><br>
+          <p>Decimal: <span id="decimalOutput">0</span></p><br>
+          <p>Binary: <span id="binaryOutput">0</span></p><br>
+          <p>Octal: <span id="octalOutput">0</span></p><br>
+          <p>Hexadecimal: <span id="hexadecimalOutput">0</span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
