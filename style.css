@@ -1,20 +1,26 @@
 h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
-main {
-  border: 2px solid black;
+body {
+  background-color: rgb(183, 213, 212);
 }
 
 .instruction {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 .main-container {
-  background-color: yellow;
-  border: 2px solid black;
+  background-color: rgb(72, 130, 134);
+  border-radius: 16px;
+  box-shadow: 5px 5px rgb(48, 82, 82);
   display: grid;
   grid-template-columns: 50% 50%;  
   padding: 30px;
@@ -22,13 +28,39 @@ main {
 }
 
 .input-container {
-  background-color: blue;
-  border: 2px solid black;
+  background-image: linear-gradient(to bottom right, rgb(183, 213, 212), rgb(72, 130, 134));
+  box-shadow: 5px 5px rgb(48, 82, 82); 
+  border-radius: 16px;
   margin: 30px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+
+#inputButton  {
+  position: relative;
+  left: 37%;
+  height: 40px;
+  width: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: 3px 3px rgb(55, 62, 64);
+  background-color: rgb(119, 135, 139);
+}
+
+#inputButton:active {
+  box-shadow: 3px 3px rgb(119, 135, 139);
+  background-color: rgb(55, 62, 64);
 }
 
 .output-container {
-  background-color: red;
-  border: 2px solid black;
+  background-image: linear-gradient(to bottom right, rgb(183, 213, 212), rgb(72, 130, 134));
+  box-shadow: 5px 5px rgb(48, 82, 82);
+  border-radius: 16px;
   margin: 30px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
